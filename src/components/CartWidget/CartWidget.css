@@ -1,0 +1,11 @@
+#totalCarrito{
+    position: absolute;
+    font-size: 15px;
+    color: rgb(116, 120, 241);
+    padding-left: 5px;
+    
+}
+
+.fa-sharp{
+    margin-right: 30px;
+}

@@ -1,12 +1,13 @@
+const https = 'https://raw.githubusercontent.com/mpicca83/Uberwinden-React_Js/a5768b9735a6c6cd184cb73cd9688df5b873074a'
 export const listadoEventos = [
     {
       id: 1,
       categoria: "foto",
       titulo: "Desfile en Checa Nueva Córdoba",
       descripcion: "Überwinden participó en el Desfile realizado en el bliche Checa de Nueva Córdoba y fue todo un éxito. Los modelos lucieron prendas de alta calidad y diseño innovador, lo que cautivó la atención de los asistentes al evento. La marca Überwinden ha demostrado una vez más su compromiso con la moda deportiva de vanguardia. ¡Enhorabuena a Überwinden por su exitosa participación en el desfile!.",
-      foto1: "https://raw.githubusercontent.com/mpicca83/Uberwinden-React_Js/a5768b9735a6c6cd184cb73cd9688df5b873074a/src/assets/images/eventos/eventoCheca1.jpg",
+      foto1: `${https}/src/assets/images/eventos/eventoCheca1.jpg`,
       altFoto1: "Desfile en Checa Foto 1",
-      foto2: "https://raw.githubusercontent.com/mpicca83/Uberwinden-React_Js/a5768b9735a6c6cd184cb73cd9688df5b873074a/src/assets/images/eventos/eventoCheca2.jpeg",
+      foto2: `${https}/src/assets/images/eventos/eventoCheca2.jpeg`,
       altFoto2: "Desfile en Checa Foto 2"
     },
     {
@@ -14,9 +15,9 @@ export const listadoEventos = [
       categoria: "foto",
       titulo: "Torneo Golf - La Cascada Country Golf Manantiales",
       descripcion: "La marca de ropa deportiva Überwinden fue el orgulloso patrocinador del Torneo de Golf celebrado en el prestigioso La Cascada Country Golf Manantiales. El evento reunió a entusiastas del golf de alto nivel y amantes del deporte, quienes disfrutaron de una emocionante jornada en un entorno natural excepcional. El logo de Überwinden estuvo presente en diferentes puntos del torneo, desde los carteles de bienvenida hasta los premios otorgados a los ganadores. Esta destacada participación permitió a la marca fortalecer su presencia en el ámbito deportivo y ampliar su alcance entre los aficionados al golf.",
-      foto1: "src/assets/images/eventos/eventoGolf.jpeg",
+      foto1: `${https}/src/assets/images/eventos/eventoGolf.jpeg`,
       altFoto1: "Evento Golf La Cascada Foto 1",
-      foto2: "src/assets/images/eventos/imgEventos.jpg",
+      foto2: `${https}/src/assets/images/eventos/imgEventos.jpg`,
       altFoto2: "Evento Golf La Cascada Foto 2"
     },
     {
@@ -24,9 +25,9 @@ export const listadoEventos = [
       categoria: "mixto",
       titulo: "Desfile Real 9° Edición",
       descripcion: "La marca de ropa deportiva Überwinden destacó en el Desfile Real 9ª edición en Córdoba. Presentó una colección vanguardista que combina funcionalidad y diseño contemporáneo. Las prendas de alta calidad y diseño ergonómico se adaptaron a diversas disciplinas deportivas. La participación de Überwinden fue aclamada por el público y la prensa, consolidando su posición en la moda deportiva. Esta experiencia representa un hito importante en su trayectoria y fortalece su compromiso con la calidad y la innovación. Überwinden continúa expandiendo su influencia en el ámbito deportivo y conquistando nuevos seguidores.",
-      foto1: "src/assets/images/eventos/eventoDesfile1.jpg",
+      foto1: `${https}/src/assets/images/eventos/eventoDesfile1.jpg`,
       altFoto1: "Fotos Desfile Real",
-      video: "src/assets/videos/eventoDesfileReal.mp4",
+      video: `${https}/src/assets/videos/eventoDesfileReal.mp4`,
       altVideo: "Video Desfile Real"
     }
 ];

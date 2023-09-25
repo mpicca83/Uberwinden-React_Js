@@ -8,3 +8,9 @@ Hasta el momento se aplicó:
   * Props
   * Desestructuración
   * Librería Bootstrap
+  * Promesas 
+  * Hooks
+  * Children
+  * Routing y navegación
+  * Layout
+

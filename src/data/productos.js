@@ -6,7 +6,7 @@ export const productos = [
         club: "",
         color: "GRIS TOPO",
         talle: "L",
-        imagen: "/src/assets/images/productosHombres/camperaHombreJossGris.jpg",
+        imagen: "./src/assets/images/productosHombres/camperaHombreJossGris.jpg",
         categoria: ["HOMBRE", "CAMPERA", "PARTICULAR"],
         precio: 12000,
         stock: 4

@@ -4,9 +4,9 @@ export const listadoEventos = [
       categoria: "foto",
       titulo: "Desfile en Checa Nueva Córdoba",
       descripcion: "Überwinden participó en el Desfile realizado en el bliche Checa de Nueva Córdoba y fue todo un éxito. Los modelos lucieron prendas de alta calidad y diseño innovador, lo que cautivó la atención de los asistentes al evento. La marca Überwinden ha demostrado una vez más su compromiso con la moda deportiva de vanguardia. ¡Enhorabuena a Überwinden por su exitosa participación en el desfile!.",
-      foto1: "src/assets/images/eventos/eventoCheca1.jpg",
+      foto1: "/assets/images/eventos/eventoCheca1.jpg",
       altFoto1: "Desfile en Checa Foto 1",
-      foto2: "src/assets/images/eventos/eventoCheca2.jpeg",
+      foto2: "/assets/images/eventos/eventoCheca2.jpeg",
       altFoto2: "Desfile en Checa Foto 2"
     },
     {

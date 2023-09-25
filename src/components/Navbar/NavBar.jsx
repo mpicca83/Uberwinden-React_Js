@@ -10,7 +10,7 @@ export const NavBar = () => {
             <Container fluid>
                  
                 <Navbar.Brand>
-                    <Link to={'/'}><img src='../src/assets/images/logoUberwinden.png' alt="Logo Überwinden" id="logoEmpresa" /> </Link>
+                    <Link to={'/'}><img src='/src/assets/images/logoUberwinden.png' alt="Logo Überwinden" id="logoEmpresa" /> </Link>
                 </Navbar.Brand>
             
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />

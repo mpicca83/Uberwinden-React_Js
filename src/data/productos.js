@@ -6,7 +6,7 @@ export const productos = [
         club: "",
         color: "GRIS TOPO",
         talle: "L",
-        imagen: "../src/assets/images/productosHombres/camperaHombreJossGris.jpg",
+        imagen: "/src/assets/images/productosHombres/camperaHombreJossGris.jpg",
         categoria: ["HOMBRE", "CAMPERA", "PARTICULAR"],
         precio: 12000,
         stock: 4
@@ -18,7 +18,7 @@ export const productos = [
         club: "",
         color: "BLANCO",
         talle: "L",
-        imagen: "../src/assets/images/productosHombres/camperaHombreJossBlanco.jpg",
+        imagen: "/src/assets/images/productosHombres/camperaHombreJossBlanco.jpg",
         categoria: ["HOMBRE", "CAMPERA", "PARTICULAR"],
         precio: 12000,
         stock: 7
@@ -30,7 +30,7 @@ export const productos = [
         club: "",
         color: "NEGRO",
         talle: "M",
-        imagen: "../src/assets/images/productosHombres/camperaHombreLukasNegro.jpg",
+        imagen: "/src/assets/images/productosHombres/camperaHombreLukasNegro.jpg",
         categoria: ["HOMBRE", "CAMPERA", "PARTICULAR"],
         precio: 10500,
         stock: 5
@@ -42,7 +42,7 @@ export const productos = [
         club: "",
         color: "NEGRO",
         talle: "M",
-        imagen: "../src/assets/images/productosMujer/topMujerOdettaNegro.jpg",
+        imagen: "/src/assets/images/productosMujer/topMujerOdettaNegro.jpg",
         categoria: ["MUJER", "TOP", "PARTICULAR"],
         precio: 8900,
         stock: 20
@@ -54,7 +54,7 @@ export const productos = [
         club: "",
         color: "AZUL",
         talle: "M",
-        imagen: "../src/assets/images/productosHombres/remeraHombreEikeAzul.jpg",
+        imagen: "/src/assets/images/productosHombres/remeraHombreEikeAzul.jpg",
         categoria: ["HOMBRE", "REMERA", "PARTICULAR"],
         precio: 7000,
         stock: 20
@@ -66,7 +66,7 @@ export const productos = [
         club: "",
         color: "AMARILLO",
         talle: "M",
-        imagen: "../src/assets/images/productosHombres/remeraHombreEikeAmarillo.jpg",
+        imagen: "/src/assets/images/productosHombres/remeraHombreEikeAmarillo.jpg",
         categoria: ["HOMBRE", "REMERA", "PARTICULAR"],
         precio: 7000,
         stock: 21
@@ -78,7 +78,7 @@ export const productos = [
         club: "",
         color: "NEGRO",
         talle: "XL",
-        imagen: "../src/assets/images/productosHombres/remeraSinMangasHombreIngeNegro.jpg",
+        imagen: "/src/assets/images/productosHombres/remeraSinMangasHombreIngeNegro.jpg",
         categoria: ["HOMBRE", "REMERA", "PARTICULAR"],
         precio: 6500,
         stock: 7
@@ -90,7 +90,7 @@ export const productos = [
         club: "",
         color: "FUCSIA",
         talle: "M",
-        imagen: "../src/assets/images/productosMujer/calzaLargaMujerEviFucsia.jpg",
+        imagen: "/src/assets/images/productosMujer/calzaLargaMujerEviFucsia.jpg",
         categoria: ["MUJER", "CALZA", "PARTICULAR"],
         precio: 8000,
         stock: 19
@@ -102,7 +102,7 @@ export const productos = [
         club: "",
         color: "NEGRO",
         talle: "L",
-        imagen: "../src/assets/images/productosMujer/calzaMujerAstridNegro.jpg",
+        imagen: "/src/assets/images/productosMujer/calzaMujerAstridNegro.jpg",
         categoria: ["MUJER", "CALZA", "PARTICULAR"],
         precio: 8000,
         stock: 15
@@ -114,7 +114,7 @@ export const productos = [
         club: "",
         color: "AMARILLO",
         talle: "M",
-        imagen: "../src/assets/images/productosMujer/remeraMujerImeldaAmarillo.jpg",
+        imagen: "/src/assets/images/productosMujer/remeraMujerImeldaAmarillo.jpg",
         categoria: ["MUJER", "REMERA", "PARTICULAR"],
         precio: 6500,
         stock: 6
@@ -126,7 +126,7 @@ export const productos = [
         club: "",
         color: "BLANCO",
         talle: "L",
-        imagen: "../src/assets/images/productosHombres/chombaHombreEdelBlanco.jpg",
+        imagen: "/src/assets/images/productosHombres/chombaHombreEdelBlanco.jpg",
         categoria: ["HOMBRE", "CHOMBA", "PARTICULAR"],
         precio: 9000,
         stock: 16
@@ -138,7 +138,7 @@ export const productos = [
         club: "",
         color: "NEGRO",
         talle: "L",
-        imagen: "../src/assets/images/productosHombres/chombaHombreEdelNegro.jpg",
+        imagen: "/src/assets/images/productosHombres/chombaHombreEdelNegro.jpg",
         categoria: ["HOMBRE", "CHOMBA", "PARTICULAR"],
         precio: 9000,
         stock: 11
@@ -150,7 +150,7 @@ export const productos = [
         club: "",
         color: "GRIS TOPO",
         talle: "L",
-        imagen: "../src/assets/images/productosHombres/remeraHombreLieselGris.jpg",
+        imagen: "/src/assets/images/productosHombres/remeraHombreLieselGris.jpg",
         categoria: ["HOMBRE", "REMERA", "PARTICULAR"],
         precio: 10000,
         stock: 6
@@ -162,7 +162,7 @@ export const productos = [
         club: "",
         color: "NEGRO",
         talle: "L",
-        imagen: "../src/assets/images/productosHombres/remeraHombreLieselNegro.jpg",
+        imagen: "/src/assets/images/productosHombres/remeraHombreLieselNegro.jpg",
         categoria: ["HOMBRE", "REMERA", "PARTICULAR"],
         precio: 10000,
         stock: 7
@@ -174,7 +174,7 @@ export const productos = [
         club: "",
         color: "NEGRO",
         talle: "M",
-        imagen: "../src/assets/images/productosMujer/buzoMujerWolfNegro.jpg",
+        imagen: "/src/assets/images/productosMujer/buzoMujerWolfNegro.jpg",
         categoria: ["MUJER", "BUZO", "PARTICULAR"],
         precio: 15000,
         stock: 5
@@ -186,7 +186,7 @@ export const productos = [
         club: "",
         color: "GRIS",
         talle: "M",
-        imagen: "../src/assets/images/productosMujer/cropTopMujerBettinaGris.jpg",
+        imagen: "/src/assets/images/productosMujer/cropTopMujerBettinaGris.jpg",
         categoria: ["MUJER", "BUZO", "PARTICULAR"],
         precio: 13500,
         stock: 5
@@ -198,7 +198,7 @@ export const productos = [
         club: "",
         color: "NEGRO",
         talle: "S",
-        imagen: "../src/assets/images/productosMujer/remeraMujerImeldaNegra.jpg",
+        imagen: "/src/assets/images/productosMujer/remeraMujerImeldaNegra.jpg",
         categoria: ["MUJER", "REMERA", "PARTICULAR"],
         precio: 6500,
         stock: 4
@@ -210,7 +210,7 @@ export const productos = [
         club: "",
         color: "ROSA",
         talle: "L",
-        imagen: "../src/assets/images/productosMujer/remeraMujerMeibenFucsia.jpg",
+        imagen: "/src/assets/images/productosMujer/remeraMujerMeibenFucsia.jpg",
         categoria: ["MUJER", "REMERA", "PARTICULAR"],
         precio: 6800,
         stock: 5
@@ -222,7 +222,7 @@ export const productos = [
         club: "",
         color: "LILA",
         talle: "M",
-        imagen: "../src/assets/images/productosMujer/shortFaldaMujerKristinLila.jpg",
+        imagen: "/src/assets/images/productosMujer/shortFaldaMujerKristinLila.jpg",
         categoria: ["MUJER", "SHORT FALDA", "PARTICULAR"],
         precio: 9000,
         stock: 4
@@ -234,7 +234,7 @@ export const productos = [
         club: "",
         color: "LILA",
         talle: "M",
-        imagen: "../src/assets/images/productosMujer/topMujerFredaLila.jpg",
+        imagen: "/src/assets/images/productosMujer/topMujerFredaLila.jpg",
         categoria: ["MUJER", "TOP", "PARTICULAR"],
         precio: 6500,
         stock: 10
@@ -246,7 +246,7 @@ export const productos = [
         club: "CORDOBA VOLEY",
         color: "AZUL",
         talle: "L",
-        imagen: "../src/assets/images/productosMerchandising/cvCamisetaAzul.jpg",
+        imagen: "/src/assets/images/productosMerchandising/cvCamisetaAzul.jpg",
         categoria: ["CAMISETA", "CLUBES"],
         precio: 8500,
         stock: 2
@@ -258,7 +258,7 @@ export const productos = [
         club: "CORDOBA VOLEY",
         color: "ROJO",
         talle: "L",
-        imagen: "../src/assets/images/productosMerchandising/cvCamisetaRoja.jpg",
+        imagen: "/src/assets/images/productosMerchandising/cvCamisetaRoja.jpg",
         categoria: ["CAMISETA", "CLUBES"],
         precio: 8500,
         stock: 2
@@ -270,7 +270,7 @@ export const productos = [
         club: "MONTEROS VOLEY CLUB",
         color: "NARANJA",
         talle: "XL",
-        imagen: "../src/assets/images/productosMerchandising/mvcCamisetaNaranja.jpg",
+        imagen: "/src/assets/images/productosMerchandising/mvcCamisetaNaranja.jpg",
         categoria: ["CAMISETA", "CLUBES"],
         precio: 9000,
         stock: 2
@@ -282,7 +282,7 @@ export const productos = [
         club: "MONTEROS VOLEY CLUB",
         color: "NEGRO",
         talle: "L",
-        imagen: "../src/assets/images/productosMerchandising/mvcChombaNegra.jpg",
+        imagen: "/src/assets/images/productosMerchandising/mvcChombaNegra.jpg",
         categoria: ["CHOMBA", "CLUBES"],
         precio: 8500,
         stock: 2
@@ -294,7 +294,7 @@ export const productos = [
         club: "ATENAS",
         color: "BLANCO",
         talle: "S",
-        imagen: "../src/assets/images/productosMerchandising/atenasCamisetaBlanco.jpg",
+        imagen: "/src/assets/images/productosMerchandising/atenasCamisetaBlanco.jpg",
         categoria: ["CAMISETA", "CLUBES"],
         precio: 7000,
         stock: 2
@@ -306,7 +306,7 @@ export const productos = [
         club: "ATENAS",
         color: "NEGRO",
         talle: "M",
-        imagen: "../src/assets/images/productosMerchandising/atenasCamisetaNegro.jpg",
+        imagen: "/src/assets/images/productosMerchandising/atenasCamisetaNegro.jpg",
         categoria: ["CAMISETA", "CLUBES"],
         precio: 7000,
         stock: 3
@@ -318,7 +318,7 @@ export const productos = [
         club: "ATENAS",
         color: "VERDE",
         talle: "S",
-        imagen: "../src/assets/images/productosMerchandising/atenasCamisetaVerde.jpg",
+        imagen: "/src/assets/images/productosMerchandising/atenasCamisetaVerde.jpg",
         categoria: ["CAMISETA", "CLUBES"],
         precio: 7000,
         stock: 5
@@ -330,7 +330,7 @@ export const productos = [
         club: "NORMAL 3",
         color: "BLANCO",
         talle: "L",
-        imagen: "../src/assets/images/productosMerchandising/normal3CamisetaBlanca.jpg",
+        imagen: "/src/assets/images/productosMerchandising/normal3CamisetaBlanca.jpg",
         categoria: ["CAMISETA", "CLUBES"],
         precio: 6500,
         stock: 2
@@ -342,7 +342,7 @@ export const productos = [
         club: "NORMAL 3",
         color: "NEGRO",
         talle: "XL",
-        imagen: "../src/assets/images/productosMerchandising/normal3CamisetaNegra.jpg",
+        imagen: "/src/assets/images/productosMerchandising/normal3CamisetaNegra.jpg",
         categoria: ["CAMISETA", "CLUBES"],
         precio: 6500,
         stock: 4
@@ -354,7 +354,7 @@ export const productos = [
         club: "NORMAL 3",
         color: "NEGRO",
         talle: "XL",
-        imagen: "../src/assets/images/productosMerchandising/Normal3CamperaNegra.jpg",
+        imagen: "/src/assets/images/productosMerchandising/Normal3CamperaNegra.jpg",
         categoria: ["CAMPERA", "CLUBES"],
         precio: 15000,
         stock: 2
@@ -366,7 +366,7 @@ export const productos = [
         club: "NORMAL 3",
         color: "GRIS",
         talle: "L",
-        imagen: "../src/assets/images/productosMerchandising/Normal3ChombaPoloGris.jpg",
+        imagen: "/src/assets/images/productosMerchandising/Normal3ChombaPoloGris.jpg",
         categoria: ["CHOMBA", "CLUBES"],
         precio: 8500,
         stock: 2
@@ -378,7 +378,7 @@ export const productos = [
         club: "NORMAL 3",
         color: "NEGRO",
         talle: "L",
-        imagen: "../src/assets/images/productosMerchandising/Normal3PantalonNegro.jpg",
+        imagen: "/src/assets/images/productosMerchandising/Normal3PantalonNegro.jpg",
         categoria: ["PANTALON", "CLUBES"],
         precio: 10000,
         stock: 3

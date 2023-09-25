@@ -1,4 +1,5 @@
 import "./NavBar.css"
+import logoUberwinden from '../../assets/images/logoUberwinden.png'
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap'
 import { CartWidget, Search } from ".."
 import { Link, NavLink } from "react-router-dom"
@@ -10,7 +11,7 @@ export const NavBar = () => {
             <Container fluid>
                  
                 <Navbar.Brand>
-                    <Link to={'/'}><img src='/src/assets/images/logoUberwinden.png' alt="Logo Überwinden" id="logoEmpresa" /> </Link>
+                    <Link to={'/'}><img src={logoUberwinden} alt="Logo Überwinden" id="logoEmpresa" /> </Link>
                 </Navbar.Brand>
             
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />

@@ -1,0 +1,22 @@
+.botonAgregar:active {
+    transform: scale(0.95);
+}
+
+.card-text{
+    text-align: left;
+}
+
+.text-center{
+    display: grid;
+    justify-items: center;
+    gap: 5px;
+}
+
+.linkDetalle {
+    color: rgb(8, 23, 190);
+    font-size: 16px;
+}
+
+.linkDetalle:hover {
+    transform: scale(1.1);
+}

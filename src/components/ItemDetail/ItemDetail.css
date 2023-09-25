@@ -1,0 +1,92 @@
+.item-detail {
+    margin: auto;
+    display: grid;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 90%; 
+    max-width: 1200px;
+}
+
+.item-image {
+    max-width: 90%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+}
+
+.item-info {
+    display: grid;
+    padding: 20px;
+}
+
+.item-name {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333; 
+}
+
+.item-description {
+    margin-bottom: 20px;
+    color: #666; 
+}
+
+.item-info-text {
+    margin-bottom: 10px;
+    color: #444; 
+}
+
+.item-price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+    color: #ff5722;
+    margin-bottom: 10px;
+}
+
+.item-cuotas{
+    text-align: center;
+    color: #75e792;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    background-color: #17363f;
+    border-radius: 25px;
+    justify-self: center;
+}
+.item-button {
+    min-width: 220px;
+    margin: auto;
+}
+
+.item-volver{
+    
+    color: black;
+    margin: 10px;
+    font-size: 16px;
+    justify-self: end;
+}
+
+.item-volver:hover {
+    transform: scale(1.1);
+}
+
+@media (min-width:768px){
+
+    .item-detail{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width:1024px){
+
+    .item-name{
+        font-size: 30px;
+    }
+    .item-info-text{
+        font-size: 20px;
+    }
+    .item-price{
+        font-size: 24px;
+    }
+}   

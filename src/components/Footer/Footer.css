@@ -1,0 +1,117 @@
+.footerContenedor{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-items: center;
+    justify-content: center;
+    max-height: 310px;
+}
+        
+.footerContenedor-seccion{
+    margin: 0;
+    padding: 10px;
+    width: 150px;
+}
+
+.footerContenedor-seccion a {
+    color: rgb(135, 135, 135);
+    font-size: 12px;
+    padding: 0;
+    
+}
+
+.footerContenedor-seccion a:hover {
+    color: rgb(255, 255, 140);
+}
+
+.footerContenedor-seccion h5 {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.iconos{
+    grid-column: 1/3;
+    width: 100%;
+    text-align: center;
+    align-self: center;
+}
+
+.iconos li{
+    display: inline-block;
+}
+
+.icono{
+    padding: 0 20px;
+    font-size: 25px;
+    color: white;
+    transition: color 0.5s, transform 1s;
+}
+
+.instagram:hover{
+    color: rgb(255, 0, 0);
+    transform: scale(1.3);
+}
+
+.facebook:hover{
+    color: rgb(0, 0, 255);
+    transform: scale(1.3);
+}
+
+.whatsapp:hover{
+    color: rgb(0, 255, 0);
+    transform: scale(1.3);
+}
+
+.email:hover{
+    color: rgb(255, 0, 255);
+    transform: scale(1.3);
+}
+
+.footerContenedor h6{
+    font-size: 10px;
+    grid-column: 1/3;
+    margin: 0;
+    align-self: end;
+}
+            
+@media (min-width:768px){
+    .footerContenedor{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        max-height: 200px;
+    }
+    .footerContenedor-seccion{
+        width: auto;
+    }
+
+    .iconos{
+        grid-column: 1/5;
+    }
+
+    .footerContenedor h6{
+        grid-column: 1/5;
+    } 
+}
+
+@media (min-width:992px){
+
+    .footerContenedor{
+        grid-template-columns: repeat(4, 1fr), 2fr;
+        grid-template-rows: repeat(2, 1fr);
+        max-height: 200px;
+        margin: auto;
+        max-height: 150px;
+        max-width: 1200px;
+    }
+    .iconos{
+        grid-column: 5/6;
+        align-self: start;
+    }
+
+    .footerContenedor h6{
+        order: 4;
+        grid-column: 1/6;
+    }
+}
+
+

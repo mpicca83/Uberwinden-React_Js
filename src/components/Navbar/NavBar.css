@@ -5,9 +5,12 @@
     font-size: 20px;
     padding: 5px 5%; 
 } 
+.navbar span{
+    font-size: 20px;
+}
 
 #logoEmpresa{
-    height: 50px;
+    height: 40px;
 }
 
 .dropdown-menu {
@@ -36,4 +39,9 @@
     }
 }
 
+@media (min-width:375px){
+    #logoEmpresa{
+        height: 50px;
+    }
+}
 

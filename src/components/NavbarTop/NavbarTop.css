@@ -1,0 +1,20 @@
+.navbarTop{
+    background-color: black;
+    color: white;
+    height: 30px;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 0 10px;
+    padding-top: auto;
+}
+.navbarTop a{
+    padding: 0 5%;
+    font-size: 20px;
+    color: white;
+}
+
+.navbarTop h4{
+    padding-top: 7px;
+    font-size: 17px;
+}
+

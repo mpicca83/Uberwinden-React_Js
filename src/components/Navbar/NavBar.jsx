@@ -1,8 +1,7 @@
 import "./NavBar.css"
-import logoUberwinden from '../../assets/images/logoUberwinden.png'
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap'
-import { CartWidget } from "../CartWidget/CartWidget"
-import { Search } from "../Search/Search"
+import { CartWidget, Search } from ".."
+import { Link, NavLink } from "react-router-dom"
 
 export const NavBar = () => {
 
@@ -10,27 +9,27 @@ export const NavBar = () => {
         <Navbar expand="lg" className="navbar">
             <Container fluid>
                  
-                <Navbar.Brand href="#home">
-                    <img src={logoUberwinden} alt="Logo Überwinden" id="logoEmpresa" /> 
+                <Navbar.Brand>
+                    <Link to={'/'}><img src='../src/assets/images/logoUberwinden.png' alt="Logo Überwinden" id="logoEmpresa" /> </Link>
                 </Navbar.Brand>
             
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto">
-                        <Nav.Link href="#Inicio">Inicio</Nav.Link>
-                        <Nav.Link href="#Nosotros">Nosotros</Nav.Link>
+                        <NavLink className='nav-link' to={'/'}>Inicio</NavLink>
+                        <NavLink className='nav-link' to={'/nosotros'}>Nosotros</NavLink>
                         <NavDropdown title="Productos" id="basic-nav-dropdown">
-                            <NavDropdown.Item className="fw-bold" href="#action/3.1">Para vos...</NavDropdown.Item>
-                            <NavDropdown.Item className="ps-5" href="#action/3.2">Hombre</NavDropdown.Item>
-                            <NavDropdown.Item className="ps-5" href="#action/3.3">Mujer</NavDropdown.Item>
+                            <span className="fw-bold dropdown-item">Productos</span>
+                            <NavLink className="ps-5 dropdown-item" to={'/category/HOMBRE'}>Hombre</NavLink>
+                            <NavLink className="ps-5 dropdown-item" to={'/category/MUJER'}>Mujer</NavLink>
                                 <NavDropdown.Divider />
-                            <NavDropdown.Item className="fw-bold" href="#action/3.4">Para tu club...</NavDropdown.Item>
-                            <NavDropdown.Item className="ps-5" href="#action/3.5">Merchandising</NavDropdown.Item>
+                            <span className="fw-bold dropdown-item">Para tu club...</span>
+                            <NavLink className="ps-5 dropdown-item" to={'/category/CLUBES'}>Merchandising</NavLink>
                             <NavDropdown.Item className="ps-5" href="#action/3.6">Personaliza tu indumentaria</NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link href="#Eventos">Eventos</Nav.Link>
-                        <Nav.Link href="#InicioDeSesion"><i className="fa-solid fa-user"></i></Nav.Link>
+                        <NavLink className='nav-link' to={'/eventos'}>Eventos</NavLink>
+                        <NavLink className='nav-link' to={'/login'}><i className="fa-solid fa-user"></i></NavLink>
                         
                         <CartWidget />
                         <Search />

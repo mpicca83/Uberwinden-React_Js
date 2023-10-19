@@ -1,13 +1,19 @@
+import { useContext } from 'react'
+import { CartCtx } from '../../context/CartContext'
 import './CartWidget.css'
-import { Nav } from 'react-bootstrap';
 
 export const CartWidget = () => {
 
+    const { cart, setShow } = useContext(CartCtx)
+
+    let cant = cart.reduce((acc, item) => acc + item.quantity, 0 )
+    cant == 0 && (cant = null)
+
+    const handleShow =()=> setShow(true)
+
     return(
-        <Nav.Link href="#Carrito">
-            <i className="fa-sharp fa-solid fa-cart-shopping">
-                <span id="totalCarrito">5</span>
-            </i>
-        </Nav.Link>
+        <i className="fa-sharp fa-solid fa-cart-shopping" onClick={handleShow}>
+            <span id="totalCarrito">{cant}</span>
+        </i>
     )
 }

@@ -1,0 +1,177 @@
+.fade {
+    padding-left: 0px !important;
+}
+
+.modal-body{
+    padding: 10px 5px;
+}
+
+.modalTitulo{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+}
+
+.tituloProducto{
+    display: none;
+}
+
+.modalTitulo div{
+    text-align: center;
+    padding: 0px 4px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.modalProducto{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    gap: 5px;
+}
+
+.modalProducto hr{
+    grid-column: 1/5;
+}
+
+.producto{
+    grid-column: 1/5;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.cantidad{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 0 18px;
+}
+
+.cantidad button{
+    padding: 0;
+    height: 30px;
+    width: 30px;
+}
+
+.precioUnitario{
+    padding: 0 10px;
+}
+
+.totalProducto{
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.btnEliminar{
+    font-size: 12px;
+    width: 75px;
+    margin: auto;
+}
+
+.modal-footer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px;
+}
+
+.modal-footer p{
+    grid-column: 1/3;
+    position: static;
+    text-align: center;
+    font-weight: bold;
+}
+
+.modal-footer button{
+    font-size: 12px;
+}
+
+@media (min-width:425px){
+    
+    .cantidad{
+        flex-direction: row;
+    }
+
+    .cantidad span{
+        margin: 6px;
+    }
+
+    .modal-footer button{
+        width: 160px;
+        justify-self: center;
+        font-size: 14px;
+    }
+}
+
+@media (min-width:768px){
+    .modalTitulo{
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .modalTitulo div{
+        font-size: 16px;
+    }
+
+    .tituloProducto{
+        display: block;
+    }
+    
+    .modalProducto{
+        grid-template-columns: repeat(5, 1fr);
+        font-size: 18px;
+    }
+
+    .modalProducto hr{
+        grid-column: 1/6;
+    }
+
+    .producto{
+        grid-column: 1/1;
+        font-weight:600;
+    }
+
+    .cantidad{
+        padding: 0;
+    }
+
+    .cantidad button{
+        width: 35px;
+    }
+}
+
+@media (min-width:992px){
+    .modalTitulo div{
+        font-size: 18px;
+    }
+
+    .cantidad{
+        display: block;
+    }
+    
+    .modal-footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal-footer p{
+        margin: 0 60px;
+    }
+
+    .modal-footer .btn-secondary{
+        order: -1;
+        margin-left: 60px;
+        padding: 8px 10px;
+        font-size: 16px;
+    }
+    .modal-footer .btn-primary{
+        padding: 8px 10px;
+        margin-right: 60px;
+        font-size: 16px;
+    }
+}

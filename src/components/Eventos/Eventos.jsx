@@ -1,24 +1,25 @@
-import './Eventos.css'
-import { listadoEventos } from '../../data/listadoEventos'
 import { useState, useEffect } from 'react'
+import { db } from '../../db/db'
+import { collection, getDocs } from 'firebase/firestore'
+import './Eventos.css'
 
 export const Eventos = () => {
 
     const [isLoading, setIsLoading] = useState(true)
     const [eventos, setEventos] = useState([])
 
-    const datos = async () => {
-        return await new Promise((resolve) => {
-            setTimeout(() => {
-                resolve(listadoEventos)
-            }, 1000)
-        })
-    }
-
     useEffect( ()=>{
-        datos()
+        
+        const listadoEventos = collection(db, 'eventos')
+
+        getDocs(listadoEventos)
         .then((res) =>{
-            setEventos(res.sort((a, b) => b.id - a.id))
+            const eventosData = res.docs.map((eventosDoc)=> (
+                {id: eventosDoc.id, ...eventosDoc.data()}
+            ))
+            eventosData.sort((a, b) => b.orden - a.orden)
+
+            setEventos(eventosData)
             setIsLoading(false)
         })
         .catch(err => console.log(err))

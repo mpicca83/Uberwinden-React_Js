@@ -1,10 +1,10 @@
 import { createBrowserRouter , RouterProvider } from "react-router-dom";
-import { NosotrosPage, EventosPage, LoginPage, } from '../pages'
+import { NosotrosPage, EventosPage, LoginPage, CartPage } from '../pages'
 import { ItemListContainer, ItemDetailContainer } from "../components";
 
 const routes = createBrowserRouter ([
 
-    //Solicitados para la segunda pre-entrega
+    //Solicitados para el proyecto final
     {
         path: '/',
         element: <ItemListContainer />
@@ -16,6 +16,10 @@ const routes = createBrowserRouter ([
     {
         path: '/item/:itemId',
         element: <ItemDetailContainer />
+    },
+    {
+        path: '/cart',
+        element: <CartPage />
     },
 
     //Extras

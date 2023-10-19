@@ -1,6 +1,7 @@
-# Proyecto Web "Überwinden - Ropa deportiva"
 
-Este es un proyecto para la **Primer Pre-Entrega** del curso de *React Js*
+# Ecommerce Web "Überwinden - Ropa deportiva"
+
+Este es un proyecto para la **Presentación FInal** del curso de *React Js*
 
 Hasta el momento se aplicó:
   * APP con VITE

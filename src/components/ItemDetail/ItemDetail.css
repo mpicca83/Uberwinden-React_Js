@@ -54,13 +54,19 @@
     border-radius: 25px;
     justify-self: center;
 }
-.item-button {
-    min-width: 220px;
-    margin: auto;
+
+.item-addToCart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+}
+
+.item-count span{ 
+    padding: 0 5px;
 }
 
 .item-volver{
-    
     color: black;
     margin: 10px;
     font-size: 16px;

@@ -1,11 +1,10 @@
 import './Search.css'
-import {Form, Button} from 'react-bootstrap';
-import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-
+import {Form, Button} from 'react-bootstrap'
+import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 export const Search = () => {
-    const [searchCategory, setSearchCategory] = useState('');
+    const [searchCategory, setSearchCategory] = useState('')
     const navigate = useNavigate()
 
     const handleSearch = () => {
@@ -15,14 +14,14 @@ export const Search = () => {
             : (busqueda = searchCategory.toUpperCase(),
                 navigate(`/category/${busqueda}`)
             )
-        setSearchCategory('');
-    };
+        setSearchCategory('')
+    }
 
     const handleKeyPress = (e) => {
         if (e.key === 'Enter') {
-          handleSearch();
+          handleSearch()
         }
-      };
+    }
 
     return(
         <Form className="d-flex inputBuscar" onSubmit={(e) => e.preventDefault()} >

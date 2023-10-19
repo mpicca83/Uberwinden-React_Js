@@ -28,7 +28,6 @@
     background: transparent;
 }
 
-
 .loginSeccion label{
     position: absolute;
     left: 0;
@@ -36,7 +35,6 @@
     font-size: 14px;
     top: -20px; 
 }
-
 
 .login button[type="submit"] {
     border: none;

@@ -1,10 +1,12 @@
 import './Item.css'
 import { Card, ListGroup, Button} from 'react-bootstrap'
 import { Link } from "react-router-dom"
-
+import { useContext } from 'react'
+import { CartCtx } from '../../context/CartContext'
 
 export const Item = ({id, titulo, color, talle, precio, imagen}) =>{
 
+  const { addToCart } = useContext(CartCtx)
 
     return(
       <Card className='p-2 shadow-lg'>
@@ -18,9 +20,8 @@ export const Item = ({id, titulo, color, talle, precio, imagen}) =>{
           <ListGroup.Item>Precio: ${precio}</ListGroup.Item>
         </ListGroup>
         <Card.Body className='text-center'>
-          <Link to={`/item/${id}`} className='linkDetalle'>Detalles</Link>
-          <Button className="botonAgregar" variant="primary">  Agregar al Carrito</Button>
-          
+          <Link to={`/item/${id}`} className='linkDetalle'>Ver detalles</Link>
+          <Button className="botonAgregar" variant="primary" onClick={()=>addToCart(id, false)}>Agregar al Carrito</Button>
         </Card.Body>
       </Card>
     )

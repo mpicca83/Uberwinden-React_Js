@@ -1,35 +1,37 @@
 import './ItemDetailContainer.css'
-import { productos } from '../../data/productos.js'
 import { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 import { ItemDetail, Layout } from '..'
-
+import { alertaSimple } from '../../helpers/alertas'
+import { db } from '../../db/db'
+import { doc, getDoc } from 'firebase/firestore'
 
 export const ItemDetailContainer = () => {
 
     const [isLoading, setIsLoading] = useState(true)
     const [product, setProduct] = useState([])
     const {itemId} = useParams()
-
-    const datos = async () => {
-        return await new Promise((resolve) => {
-            setTimeout(() => {
-                resolve(productos)
-            }, 500)
-        })
-    }
+    const navigate = useNavigate()
 
     useEffect( ()=>{
-        datos()
+
+        const productRef = doc(db, 'productos', itemId)
+
+        getDoc(productRef)
         .then((res) =>{
-            setProduct(res)
-            setIsLoading(false)
+            if(res.exists()){
+                const productData = {id: res.id, ...res.data()}
+                setProduct(productData)
+                setIsLoading(false)
+            }else{
+                alertaSimple('', 'No se encontraron resultados.', 'error', 3000) 
+                navigate('/')
+            }
         })
         .catch(err => console.log(err))
-    },[])
+        
+    },[itemId])
 
-    const item = product.find((producto)=>producto.id == parseInt(itemId))
-    
     return(
         <Layout>
             <h2 className='tituloDetail'>Detalle del producto</h2>
@@ -37,7 +39,7 @@ export const ItemDetailContainer = () => {
                 isLoading
                     ? <div className='isLoading'>Cargando . . .<div className='loading'></div></div>
                     : <div className='itemDetail'>
-                        <ItemDetail {...item} />
+                        <ItemDetail {...product} />
                     </div>
             }
         </Layout>

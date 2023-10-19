@@ -1,6 +1,6 @@
 import './Login.css'
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 export const Login = () => {
 
@@ -8,15 +8,15 @@ export const Login = () => {
   const [password, setPassword] = useState('')
 
   const handleUsernameChange = (e) => {
-    setUsername(e.target.value);
+    setUsername(e.target.value)
   }
 
   const handlePasswordChange = (e) => {
-    setPassword(e.target.value);
+    setPassword(e.target.value)
   }
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault()
     setUsername('')
     setPassword('')
   }

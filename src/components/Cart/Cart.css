@@ -1,0 +1,151 @@
+.cartVacio{
+    margin-top: 50px;
+}
+
+.cart{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 10px;
+    flex-direction: column;
+    max-width:  550px;
+    margin: auto;
+}
+
+.cartSeccion {
+    flex: 1;
+}
+
+.cartSeccion td, th{
+    text-align: center;
+    vertical-align: middle;
+    padding: 2px;
+}
+
+.cartSeccion img{
+    width: 50px;
+}
+
+.borrar{
+    display: none;
+}
+
+.tabla{
+    font-size: 12px;
+}
+
+.cartSeccion h4{
+    text-align: center;
+    color: rgb(78, 60, 218);
+}
+
+.importeTotalMovil{
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.importeTotalDesktop{
+    display: none;
+}
+
+.form{
+    display: flex;
+    text-align: center;
+    background-color: rgb(242, 242, 242);
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form p{
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.formSeccion{
+    padding: 5px 15px;
+}
+
+.fontSize{
+    font-size: 12px !important;
+}
+
+.formSeccion button{
+    margin-top: 20px;
+}
+
+@media (min-width:425px){
+    .importeTotalMovil{
+        font-size: 20px;
+    }
+    .borrar{
+        display: table-cell;
+    }
+    .fontSize{
+        font-size: 16px !important;
+    }
+    .form p{
+        font-size: 18px;
+    }
+}
+
+@media (min-width:992px){
+    .cart{
+        padding: 0 30px;
+        gap: 50px;
+        flex-direction: row;
+        max-width:  none;
+    }
+    .cartSeccion td, th{
+        padding: 8px;
+    }
+    
+    .form p{
+        font-size: 12px;
+    }
+    .fontSize{
+        font-size: 12px !important;
+    }
+    .importeTotalMovil{
+        display: none;
+    }
+    .importeTotalDesktop{
+        display: block;
+        margin-top: 25px;
+        font-size: 14px;
+    }
+    .form{
+        padding: 20px;
+        gap: 10px;
+        flex-direction: row;
+        font-size: 12px;
+    }
+    .formSeccion{
+        width: 50%;
+        padding: 0px 15px;
+    }
+    .form label{
+        font-size: 12px ;
+    }
+}
+
+@media (min-width:1440px){
+    .tabla{
+        font-size: 16px;
+    }
+    .cartSeccion img{
+        width: 100px;
+    }
+    .form p{
+        font-size: 16px;
+    }
+    .fontSize{
+        font-size: 16px !important;
+    }
+    .form label{
+        font-size: 16px ;
+    }
+    .importeTotalDesktop{
+        font-size: 18px;
+    }
+}

@@ -1,11 +1,11 @@
 import "./NavBar.css"
 import logoUberwinden from '../../assets/images/logoUberwinden.png'
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap'
-import { CartWidget, Search } from ".."
+import { CartWidget, Search, CartModal } from ".."
 import { Link, NavLink } from "react-router-dom"
 
 export const NavBar = () => {
-
+  
     return(
         <Navbar expand="lg" className="navbar">
             <Container fluid>
@@ -32,7 +32,11 @@ export const NavBar = () => {
                         <NavLink className='nav-link' to={'/eventos'}>Eventos</NavLink>
                         <NavLink className='nav-link' to={'/login'}><i className="fa-solid fa-user"></i></NavLink>
                         
-                        <CartWidget />
+                        <NavLink className='nav-link'>
+                            <CartWidget />
+                            <CartModal />
+                        </NavLink>
+
                         <Search />
                         
                     </Nav>

@@ -10,26 +10,26 @@ export const Footer = () => {
                 <li><Link to={'/category/HOMBRE'}>Hombre</Link></li>
                 <li><Link to={'/category/MUJER'}>Mujer</Link></li>
                 <li><Link to={'/category/CLUBES'}>Merchandising clubes</Link></li>
-                <li><Link>Personaliza tu indumentaria</Link></li>
+                <li><Link to={'/pagina_en_mantenimiento'}>Personaliza tu indumentaria</Link></li>
             </ul>
             <ul className="footerContenedor-seccion">
                 <li><h5>Ayuda</h5></li>
-                <li><Link>Preguntas frecuentes</Link></li> 
-                <li><Link>Politica de envíos</Link></li>
-                <li><Link>Cambio y devoluciones</Link></li> 
-                <li><Link>Medios de pago</Link></li>
-                <li><Link>Cancelación de compra</Link></li>
+                <li><Link to={'/pagina_en_mantenimiento'}>Preguntas frecuentes</Link></li> 
+                <li><Link to={'/pagina_en_mantenimiento'}>Politica de envíos</Link></li>
+                <li><Link to={'/pagina_en_mantenimiento'}>Cambio y devoluciones</Link></li> 
+                <li><Link to={'/pagina_en_mantenimiento'}>Medios de pago</Link></li>
+                <li><Link to={'/pagina_en_mantenimiento'}>Cancelación de compra</Link></li>
             </ul>
             <ul className="footerContenedor-seccion">
                 <li><h5>Acerca de Überwinden</h5></li>
                 <li><Link to={'/nosotros'}>Quines somos</Link></li>
                 <li><Link to={'/eventos'}>Eventos</Link></li>
-                <li><Link>Tiendas</Link></li>
+                <li><Link to={'/pagina_en_mantenimiento'}>Tiendas</Link></li>
             </ul>
             <ul className="footerContenedor-seccion">
                 <li><h5>Usuario</h5></li>
-                <li><Link to={'/login'}>Iniciar sesión</Link></li>
-                <li><Link>Registrate</Link></li>
+                <li><Link to={'/pagina_en_mantenimiento'}>Iniciar sesión</Link></li>
+                <li><Link to={'/pagina_en_mantenimiento'}>Registrate</Link></li>
             </ul>
             <ul className="footerContenedor-seccion iconos">
                 <li><a className='aFooter' href="https://www.instagram.com/uberwindensportwear/" target="_blank"><i className="fa-brands fa-instagram icono instagram"></i></a></li>

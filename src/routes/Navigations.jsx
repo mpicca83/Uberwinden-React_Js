@@ -1,5 +1,5 @@
 import { createBrowserRouter , RouterProvider } from "react-router-dom";
-import { NosotrosPage, EventosPage, LoginPage, CartPage } from '../pages'
+import { NosotrosPage, EventosPage, CartPage, MaintenancePage } from '../pages'
 import { ItemListContainer, ItemDetailContainer } from "../components";
 
 const routes = createBrowserRouter ([
@@ -21,7 +21,6 @@ const routes = createBrowserRouter ([
         path: '/cart',
         element: <CartPage />
     },
-
     //Extras
     {
         path: '/nosotros',
@@ -32,10 +31,9 @@ const routes = createBrowserRouter ([
         element: <EventosPage />
     },
     {
-        path: '/login',
-        element: <LoginPage />
+        path: '/pagina_en_mantenimiento',
+        element: <MaintenancePage />
     },
-
 ])
 
 export const Navigations = () => {

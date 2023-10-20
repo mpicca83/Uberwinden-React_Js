@@ -1,6 +1,6 @@
 import './ItemListContainer.css'
 import { useParams, useNavigate } from 'react-router-dom'
-import { Item, Layout} from '..'
+import { ItemList, Layout} from '..'
 import { useEffect, useState, useContext } from 'react'
 import { alertaSimple } from '../../helpers/alertas'
 import { CartCtx } from '../../context/CartContext'
@@ -56,7 +56,7 @@ export const ItemListContainer = () => {
                         : <div className='itemList'>
                             {
                                 products.map((producto) => (
-                                    <Item
+                                    <ItemList
                                         key={producto.id}
                                         id={producto.id}
                                         titulo={producto.titulo}

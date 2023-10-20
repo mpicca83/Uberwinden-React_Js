@@ -27,10 +27,10 @@ export const NavBar = () => {
                                 <NavDropdown.Divider />
                             <span className="fw-bold dropdown-item">Para tu club...</span>
                             <NavLink className="ps-5 dropdown-item" to={'/category/CLUBES'}>Merchandising</NavLink>
-                            <NavDropdown.Item className="ps-5" href="#action/3.6">Personaliza tu indumentaria</NavDropdown.Item>
+                            <NavLink className="ps-5 dropdown-item" to={'/pagina_en_mantenimiento'}>Personaliza tu indumentaria</NavLink>
                         </NavDropdown>
                         <NavLink className='nav-link' to={'/eventos'}>Eventos</NavLink>
-                        <NavLink className='nav-link' to={'/login'}><i className="fa-solid fa-user"></i></NavLink>
+                        <NavLink className='nav-link'to={'/pagina_en_mantenimiento'}><i className="fa-solid fa-user"></i></NavLink>
                         
                         <NavLink className='nav-link'>
                             <CartWidget />

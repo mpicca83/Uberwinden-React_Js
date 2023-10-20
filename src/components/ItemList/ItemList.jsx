@@ -1,10 +1,10 @@
-import './Item.css'
+import './ItemList.css'
 import { Card, ListGroup, Button} from 'react-bootstrap'
 import { Link } from "react-router-dom"
 import { useContext } from 'react'
 import { CartCtx } from '../../context/CartContext'
 
-export const Item = ({id, titulo, color, talle, precio, imagen}) =>{
+export const ItemList = ({id, titulo, color, talle, precio, imagen}) =>{
 
   const { addToCart } = useContext(CartCtx)
 
